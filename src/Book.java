@@ -1,12 +1,21 @@
 public class Book {
-    String surname;
-    String name;
+    private String title;
+    private int yearOfPublication;
 
-    static public Book Author(String surname, String name) {
-        Book author = new Book();
-        author.surname = surname;
-        author.name = name;
-        return author;
+    public Book (String title,int yearOfPublication){
+        this.title=title;
+        this.yearOfPublication=yearOfPublication;
+    }
+    public String getTitle(){
+        return this.title;
+    }
+
+    public int getYearOfPublication() {
+        return yearOfPublication;
+    }
+
+    public void setYearOfPublication(int yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
     }
 }
 
